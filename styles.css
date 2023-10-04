@@ -1,0 +1,50 @@
+/* variables */
+:root {
+    --nav-gray: rgb(154,158,161);
+    --nav-green: rgb(42,163,68);
+    --nav-white: rgb(255,255,255);
+}
+
+
+
+/* Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Navbar */
+nav{
+    background: rgb(53, 58, 64);
+}
+
+#container-fluid {
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+}
+
+.nav-img {
+    width: 80px;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #ccc;
+}
+
+.nav-link {
+    color: var(--nav-gray);
+}
+.navbar-brand, .nav-link-white{
+    color: var(--nav-white);
+}
+
+.nav-link-green {
+    color: var(--nav-green);
+}
+
+.nav-link-green:hover {
+    color: rgb(9, 223, 56);
+}
