@@ -2,7 +2,6 @@
 :root {
     --nav-gray: rgb(154,158,161);
     --nav-green: rgb(42,163,68);
-    --nav-white: rgb(255,255,255);
 }
 
 
@@ -17,6 +16,11 @@
 
 
 /* Navbar */
+
+a {
+    text-decoration: none;
+}
+
 nav{
     background: rgb(53, 58, 64);
 }
@@ -30,16 +34,18 @@ nav{
     width: 80px;
 }
 
-.navbar-brand:hover, .nav-link:hover {
+.brand:hover, .nav--link:hover {
     color: #ccc;
-}
+} 
 
-.nav-link {
+.nav--link {
     color: var(--nav-gray);
 }
-.navbar-brand, .nav-link-white{
-    color: var(--nav-white);
+
+.brand, .nav-link-white {
+    color: #fff;
 }
+
 
 .nav-link-green {
     color: var(--nav-green);
@@ -47,4 +53,76 @@ nav{
 
 .nav-link-green:hover {
     color: rgb(9, 223, 56);
+}  
+
+.collapse {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+/* Hero */
+
+.hero {
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding-right: 8vw;
+    color: #fff;
+} 
+
+.hero p {
+    width: 45%;
+    text-align: end;
+}
+
+.btn-success {
+    background-color: rgb(41, 167, 68);
+    border: 1px solid rgb(41, 167, 68);
+}
+
+.hero-item-1 {
+    background-image: url(Imgs/ba1.jpg);
+    background-color: rgb(60, 60, 60);
+    background-blend-mode: soft-light;
+}
+
+
+.hero-item-2 {
+    background-image: url(Imgs/ba2.jpg);
+    background-color: rgb(60, 60, 60);
+    background-blend-mode: soft-light;
+}
+
+.hero-item-3 {
+    background-image: url(Imgs/ba3.jpg);
+    background-color: rgb(60, 60, 60);
+    background-blend-mode: soft-light;
+}
+
+/* Cards-menu */
+
+
+@media screen and (max-width:600px) {
+  /* Navbar changes */
+    #container-fluid{
+    margin: 0;
+  }
+
+  /* hero changes */
+  .hero p {
+    width: 100%;
+  }
+  .hero {
+    padding: 0 3rem;
+    align-items: center;
+  }
 }
