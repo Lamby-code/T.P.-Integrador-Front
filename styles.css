@@ -109,6 +109,41 @@ nav{
 }
 
 /* Cards-menu */
+.cards-title   {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+ .cards-title p {  
+    margin:0;
+    font-size: .8rem;
+    color: #555;
+
+ }
+ .cards-title, .cards-menu{
+     font-family: 'Noto Sans', sans-serif;
+ }
+
+.card-body h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.card-body p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.card {
+    padding: 0;
+}
+
+
+
+
 
 
 @media screen and (max-width:600px) {
@@ -125,4 +160,12 @@ nav{
     padding: 0 3rem;
     align-items: center;
   }
+}
+
+
+@media screen and (min-width:576px){
+    /* cards changes */
+    .card{
+        margin: 0 auto;
+    }
 }
