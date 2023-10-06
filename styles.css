@@ -1,7 +1,21 @@
 /* variables */
 :root {
+    /* pallette */
+    --nav-background:rgb(53, 58, 64);
     --nav-gray: rgb(154,158,161);
     --nav-green: rgb(42,163,68);
+    --nav-link-hover:#ccc;
+    --nav-link-buy:rgb(9, 223, 56);
+    --form-placeholder: #888;
+    --title-gray:#555;
+    --color-white:#fff;
+    --color-black:rgb(0,0,0);
+    --btn-success:rgb(41, 167, 68);
+    --btn-submit:#96c93e;
+    --carousel-color-fusion:rgb(60, 60, 60);
+    --background-places:#353a40;
+    --background-footer:#1d4358;
+    --footer-link-hover:#58a6d6;
 }
 
 
@@ -22,7 +36,7 @@ a {
 }
 
 nav{
-    background: rgb(53, 58, 64);
+    background: var(--nav-background);
 }
 
 #container-fluid {
@@ -35,7 +49,7 @@ nav{
 }
 
 .brand:hover, .nav--link:hover {
-    color: #ccc;
+    color: var(--nav-link-hover);
 } 
 
 .nav--link {
@@ -43,7 +57,7 @@ nav{
 }
 
 .brand, .nav-link-white {
-    color: #fff;
+    color: var(--color-white);
 }
 
 
@@ -52,7 +66,7 @@ nav{
 }
 
 .nav-link-green:hover {
-    color: rgb(9, 223, 56);
+    color: var(--nav-link-buy);
 }  
 
 .collapse {
@@ -76,7 +90,7 @@ nav{
     justify-content: center;
     align-items: end;
     padding-right: 8vw;
-    color: #fff;
+    color: var(--color-white);
 } 
 
 .hero p {
@@ -85,26 +99,26 @@ nav{
 }
 
 .btn-success {
-    background-color: rgb(41, 167, 68);
-    border: 1px solid rgb(41, 167, 68);
+    background-color: var(--btn-success);
+    border: 1px solid var(--btn-success);
 }
 
 .hero-item-1 {
     background-image: url(Imgs/ba1.jpg);
-    background-color: rgb(60, 60, 60);
+    background-color: var(--carousel-color-fusion);
     background-blend-mode: soft-light;
 }
 
 
 .hero-item-2 {
     background-image: url(Imgs/ba2.jpg);
-    background-color: rgb(60, 60, 60);
+    background-color: var(--carousel-color-fusion);
     background-blend-mode: soft-light;
 }
 
 .hero-item-3 {
     background-image: url(Imgs/ba3.jpg);
-    background-color: rgb(60, 60, 60);
+    background-color: var(--carousel-color-fusion);
     background-blend-mode: soft-light;
 }
 
@@ -117,7 +131,7 @@ nav{
  .cards-title p {  
     margin:0;
     font-size: .8rem;
-    color: #555;
+    color: var(--title-gray);
 
  }
  .cards-title, .cards-menu{
@@ -134,11 +148,11 @@ nav{
 }
 .card-body p {
     font-size: 0.9rem;
-    color: #555;
+    color: var(--title-gray);
 }
 
 .text-white {
-    color: #fff;
+    color: var(--color-white);
 }
 
 .card {
@@ -148,10 +162,10 @@ nav{
 /* Places */
 
 .places-text {
-    background-color: #353a40;
+    background-color: var(--background-places);
     width: 100%;
-    border-left: 1px solid #fff;
-    color: #fff;
+    border-left: 1px solid var(--color-white);
+    color: var(--color-white);
 }
 
 .places-text p {
@@ -166,11 +180,11 @@ nav{
 
 /* Form */
 .form-text{
-    color: rgb(0, 0, 0);
+    color: var(--color-black);
 }
 
 .form-text span {
-    border-bottom: 2px dotted rgb(0, 0, 0);
+    border-bottom: 2px dotted var(--color-black);
 }
 
 .form{
@@ -180,18 +194,40 @@ nav{
 
 .form-submit {
     width: 100%;
-    background-color: #96c93e;
-    border: 1px solid #96c93e;
+    background-color: var(--btn-submit);
+    border: 1px solid var(--btn-submit);
 }
 
 .form > p {
     font-size: .8rem;
-    color: #555;
+    color: var(--title-gray);
+}
+
+.form-placeholder, .form-control::placeholder{
+    color: var(--form-placeholder);
 }
 
 
 
+/* footer */
+footer{
+    margin-top: 1rem;
+    background-color: var(--background-footer);
+    padding: 1rem 8rem 1rem;
+    text-align: center;
+}
+footer a{
+    color: var(--color-white);
+    font-size: .91rem;
+}
 
+footer a:hover {
+    color: var(--footer-link-hover);
+}
+
+
+
+/* Media queries */
 @media screen and (max-width:600px) {
   /* Navbar changes */
     #container-fluid{
