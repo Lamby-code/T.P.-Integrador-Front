@@ -63,19 +63,19 @@
             <p class="fs-4 fw-bold">Estudiante</p>
             <p class="fs-5">Tienen un descuento</p>
             <p class="fw-bold fs-5">80%</p>
-            <p class="card-doc">* presentar documentación</p>
+            <p class="text-gray">* presentar documentación</p>
           </div>
           <div class="col-12 col-md ticket-card border-light-blue py-4 ">
             <p class="fs-4 fw-bold">Trainee</p>
             <p class="fs-5">Tienen un descuento</p>
             <p class="fw-bold fs-5">50%</p>
-            <p class="card-doc">* presentar documentación</p>
+            <p class="text-gray">* presentar documentación</p>
           </div>
           <div class="col-12 col-md ticket-card border-yellow py-4">
             <p class="fs-4 fw-bold">Junior</p>
             <p class="fs-5">Tienen un descuento</p>
             <p class="fw-bold fs-5">15%</p>
-            <p class="card-doc">* presentar documentación</p>
+            <p class="text-gray">* presentar documentación</p>
           </div>
         </div>
       </div>
@@ -85,23 +85,51 @@
         <p>VENTA</p>
         <h3 class="fw-bold">VALOR DE TICKET $200</h3>
       </div>
-      
-      <div class="form">
-        <div class="row mt-2 mb-3">
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+
+      <form>
+        <div class="ticket-form">
+          <div class="row mt-2 mb-3 gx-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            </div>
           </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Correo" aria-label="Last name">
+          </div>   
+
+          <div class="row mb-3 gx-3">
+            <div class="col">
+              <label class="mb-2" for="ticket-amount">Cantidad</label>
+              <input type="text" id="ticket-amount" class="form-control" placeholder="Cantidad" aria-label="First name">
+            </div>
+            <div class="col">
+              <label class="mb-2" for="ticket-category">Categoria</label>
+              <select id="ticket-category" class="form-select text-gray">
+                <option value="student" selected>Estudiante</option>
+                <option value="trainee">Trainee</option>
+                <option value="junior">Junior</option>
+              </select>
+            </div>
           </div>
+
+          <div class="alert alert-primary" role="alert">
+            Total a Pagar: $
+          </div>
+                
+          <div class="row gx-3">
+            <div class="col">
+              <input type="reset" class="btn btn-success form-submit" value="Borrar"></input>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-success form-submit">Resumen</button>
+            </div>
+          </div>
+          
         </div>
-        <div class="form-floating">
-          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-          <label class="form-placeholder" for="floatingTextarea2">Sobre qué queres hablar?</label>
-        </div>
-          <p class="mb-3">Recuerda incluir un título para tu charla</p>
-          <button type="button" class="btn btn-success form-submit">Success</button>
-      </div>
+      </form>
 
     </main>
 

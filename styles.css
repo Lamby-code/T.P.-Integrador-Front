@@ -241,7 +241,7 @@ footer a:hover {
     text-align: center;
 }
 
-.card-doc {
+.text-gray {
     color: var(--form-placeholder);
 }
 
@@ -257,14 +257,19 @@ footer a:hover {
  border: 2px solid var(--border-yellow);
 }
 
-/* Ticket Forms */
 
+/* Ticket Form */
+.ticket-form{
+    margin: 0 17.25rem;
+}
 
 
 
 
 
 /* Media queries */
+
+/* main page */
 @media screen and (max-width:995px){
     .collapse{
         justify-content: start;
@@ -276,9 +281,9 @@ footer a:hover {
   /* Navbar changes */
     #container-fluid{
     margin: 0;
-  }
+}
 
-  /* hero changes */
+/* hero changes */
   .hero p {
     width: 100%;
   }
@@ -293,5 +298,39 @@ footer a:hover {
     /* cards changes */
     .card{
         margin: 0 auto;
+    }
+}
+
+/* Secondary pages */
+/* Ticket */
+
+@media screen and (max-width:1103px){
+    .ticket-card-container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .ticket-form{
+        margin: 0 10rem;
+    }
+}
+
+@media screen and (max-width:767px){
+    .ticket-card-container{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    .ticket-form{
+        margin: 0 9.2rem;
+    }
+    
+}
+
+@media screen and (max-width:650px){
+    .ticket-card-container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .ticket-form{
+        margin: 0 0.7rem;
     }
 }
