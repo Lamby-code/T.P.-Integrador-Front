@@ -16,6 +16,9 @@
     --background-places:#353a40;
     --background-footer:#1d4358;
     --footer-link-hover:#58a6d6;
+    --border-blue:rgb(0,123,255);
+    --border-light-blue:rgb(23,162,184);
+    --border-yellow:rgb(255,193,7);
 }
 
 
@@ -224,6 +227,40 @@ footer a{
 footer a:hover {
     color: var(--footer-link-hover);
 }
+
+/* Secondary pages */
+
+/* Tickets */
+
+/* Ticket Cards */
+.ticket-card-container {
+    margin:2rem 18rem 0.4rem 18rem;
+}
+
+.ticket-card {
+    text-align: center;
+}
+
+.card-doc {
+    color: var(--form-placeholder);
+}
+
+.border-blue {
+ border: 2px solid var(--border-blue);
+}
+
+.border-light-blue {
+ border: 2px solid var(--border-light-blue);
+}
+
+.border-yellow {
+ border: 2px solid var(--border-yellow);
+}
+
+/* Ticket Forms */
+
+
+
 
 
 
