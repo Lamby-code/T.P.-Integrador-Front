@@ -7,8 +7,11 @@ function showPrice() {
     let discount = discountSelect.value;
     let amountInput = document.getElementById("ticket-amount");
     let amount = amountInput.value;
+    if (((amount % 1) != 0) || (amount < 1)) {
+        amount=NaN;
+    }
     let realPrice = amount*(200 - (200*discount));
-    if (Number.isNaN(realPrice)){
+    if (Number.isNaN(realPrice)) {
     communicationAlert.textContent = `Total a Pagar: $`;
     } else {
     communicationAlert.textContent = `Total a Pagar: $${realPrice}`;
