@@ -273,7 +273,47 @@ footer a:hover {
     margin: 0 17.25rem;
 }
 
+/*Orators Page*/
+.imagen{
+    width:100%;
+}
+.half-image{
+    width: 50%;
+}
+.hide{
+    display:none;
+}
+.ease-animation {
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+.circle {
+    border-radius: 50%;
+    transition: border-radius 0.12s ease-in-out;
+}
 
+.semiCircle{
+    border-radius: 0.5rem;
+}
+
+.circleTransition {
+    border-radius: 0.5rem;
+    transition: border-radius 0.12s ease-in-out;
+}
+
+/* become an orator */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+.content {
+    flex: 1;
+}
+.show-clickable {
+    cursor: pointer;
+}
 
 
 
@@ -285,7 +325,6 @@ footer a:hover {
         justify-content: start;
     }
 }
-
 
 @media screen and (max-width:600px) {
     /* Navbar changes */
@@ -342,5 +381,12 @@ footer a:hover {
     }
     .ticket-form{
         margin: 0 0.7rem;
+    }
+}
+
+/* Orators */
+@media screen and (max-width:991px) {
+    .half-image{
+        width: 100%;
     }
 }

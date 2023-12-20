@@ -1,5 +1,5 @@
 let resumeBtn = document.getElementById("resumeButton");
-resumeBtn.addEventListener("click", showPrice);
+resumeBtn.addEventListener("click", showPrice); */
 
 function showPrice() {
     let communicationAlert = document.getElementById("payResume");
@@ -17,6 +17,3 @@ function showPrice() {
     communicationAlert.textContent = `Total a Pagar: $${realPrice}`;
     }
 }
-
-
-
